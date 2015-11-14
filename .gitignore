@@ -1,0 +1,28 @@
+# OS specific temporary files
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.buildpath
+.idea
+.project
+.settings
+*.esproj
+*.komodoproject
+*.komodotools
+nbproject
+
+# Tools
+.svn
+.sass-cache
+
+# Ignore Vagrant Box
+.vagrant
+
+# Ignore Misc Stuff that Composer generates automatically
+public/.travis.yml
+public/LICENSE
+public/phpunit.xml.dist
+public/vendor
+public/web

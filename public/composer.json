@@ -1,0 +1,87 @@
+{
+  "name": "composer-d7-sandbox",
+  "description": "Playing with Composer-centric management of Drupal 7 projects",
+  "repositories": [{
+    "type": "composer",
+    "url": "https://packagist.drupal-composer.org"
+  }],
+  "require": {
+    "composer/composer": "~1.0@alpha",
+    "drupal/drupal": "7.*",
+    "drupal/drupal": "7.*",
+    "drupal/tangler": "~0.1.9",
+    "drupal/drupal-library-installer-plugin": "~0.1",
+    "ckeditor/ckeditor": "dev-full/stable",
+    "drupal/date": "7.*",
+    "drupal/diff": "7.*",
+    "drupal/entity": "7.*",
+    "drupal/entityform": "7.*",
+    "drupal/module_filter": "7.*",
+    "drupal/panels": "7.*",
+    "drupal/registry_rebuild": "7.*",
+    "drupal/rules": "7.*",
+    "drupal/strongarm": "7.*",
+    "winmillwill/settings_compile": "~2.1.1",
+    "drupal/markdown": "7.x",
+    "drupal/libraries": "7.2.0",
+    "drupal/fontawesome": "7.x",
+    "drupal/menu_attributes": "7.1.0-rc3",
+    "drupal/I18n": "7.1.13",
+    "drupal/migrate": "7.2.8",
+    "drupal/variable_email": "7.1.0-alpha1"
+  },
+  "require-dev": {
+    "behat/behat": "2.5.2",
+    "behat/mink": "~1.5.0@stable",
+    "drupal/backup_migrate": "7.3.*",
+    "drupal/devel": "7.*",
+    "drupal/devel_themer": "7.1.x-dev",
+    "drupal/diff": "~7.3.2",
+    "drupal/drupal-extension": "0.1.5",
+    "drupal/stage_file_proxy": "7.1.6",
+    "phpunit/phpunit": "4.3.5",
+    "drupal/coder": "7.2.4",
+    "drupal/views": "7.*",
+    "drupal/ckeditor": "7.*",
+    "drupal/context": "7.*",
+    "drupal/ctools": "7.*",
+    "composer/installers": "~1.0",
+    "derhasi/composer-preserve-paths": "0.1.*",
+    "drupal/features": "7.*",
+    "drupal/realistic_dummy_content": "7.1.0-beta7",
+    "drupal/admin_menu": "7.3.0-rc5",
+    "drupal/blockify": "7.1.2",
+    "drupal/magic": "7.2.2",
+    "drupal/aurora": "7.3.6",
+    "drupal/responsive_menu_combined": "7.1.0-alpha1",
+    "drupal/beep_edition": "7.3.2",
+    "drupal/basic": "7.4.2",
+    "drupal/zeropoint": "7.4.7"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "rm README.md LICENSE .travis.yml phpunit.xml.dist"
+    ]
+  },
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/": ["type:drupal-core"],
+      "web/sites/all/modules/contrib/{$name}/": ["type:drupal-module"],
+      "web/sites/all/themes/contrib/{$name}/": ["type:drupal-theme"],
+      "web/sites/all/libraries/{$name}/": ["type:drupal-library"],
+      "web/sites/all/drush/{$name}/": ["type:drupal-drush"],
+      "web/profiles/{$name}/": ["type:drupal-profile"]
+    },
+    "preserve-paths": [
+      "web/sites/all/modules/contrib",
+      "web/sites/all/themes/contrib",
+      "web/sites/all/libraries",
+      "web/sites/all/drush",
+      "web/sites/default/settings.php",
+      "web/sites/default/files"
+    ]
+  }
+}
