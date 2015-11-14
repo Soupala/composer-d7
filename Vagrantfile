@@ -7,9 +7,9 @@ Vagrant.configure("2") do |config|
     config.vm.network "private_network", ip: "192.168.33.10"
     config.vm.hostname = "scotchbox"
     config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
-	config.vm.provider "virtualbox" do |v|
-  	v.memory = 2048
-	end
+    config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+    end
     # Optional NFS. Make sure to remove other synced_folder line too
     #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
 
@@ -34,17 +34,17 @@ Vagrant.configure("2") do |config|
         echo "jumping Apache..."
         sudo service apache2 restart
 
-        sudo apt-get install rubygems
+        echo "updating gem system"
         gem update --system
 
-        echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+        echo "installing bundler"
         gem install bundler
+
+        echo "installing compass"
         gem install compass
     
-        echo "installing additional tools for Grunt Drupal Tasks"
-        npm install -g generator-gadget grunt-cli generator-gadget
-
-        done    
+        echo "installing Grunt"
+        npm install -g grunt-cli  
         
     SHELL
 

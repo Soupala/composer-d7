@@ -28,7 +28,8 @@
     "drupal/menu_attributes": "7.1.0-rc3",
     "drupal/I18n": "7.1.13",
     "drupal/migrate": "7.2.8",
-    "drupal/variable_email": "7.1.0-alpha1"
+    "drupal/variable_email": "7.1.0-alpha1",
+    "drupal/pathauto": "7.x"
   },
   "require-dev": {
     "behat/behat": "2.5.2",
