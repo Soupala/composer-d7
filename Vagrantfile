@@ -45,6 +45,11 @@ Vagrant.configure("2") do |config|
     
         echo "installing Grunt"
         npm install -g grunt-cli  
+
+        echo "installing grunt-compass bridges"
+        sudo npm install grunt-contrib-watch -save-dev
+        sudo npm install grunt-contrib-compass -save-dev 
+        sudo npm install grunt-contrib-sass -save-dev
         
     SHELL
 

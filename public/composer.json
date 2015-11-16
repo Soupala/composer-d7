@@ -8,7 +8,6 @@
   "require": {
     "composer/composer": "~1.0@alpha",
     "drupal/drupal": "7.*",
-    "drupal/drupal": "7.*",
     "drupal/tangler": "~0.1.9",
     "drupal/drupal-library-installer-plugin": "~0.1",
     "ckeditor/ckeditor": "dev-full/stable",
@@ -24,12 +23,14 @@
     "winmillwill/settings_compile": "~2.1.1",
     "drupal/markdown": "7.x",
     "drupal/libraries": "7.2.0",
-    "drupal/fontawesome": "7.x",
     "drupal/menu_attributes": "7.1.0-rc3",
     "drupal/I18n": "7.1.13",
     "drupal/migrate": "7.2.8",
     "drupal/variable_email": "7.1.0-alpha1",
-    "drupal/pathauto": "7.x"
+    "drupal/pathauto": "7.x",
+    "drupal/nodequeue": "7.x",
+    "drupal/token": "7.x",
+    "drupal/zen": "7.x"
   },
   "require-dev": {
     "behat/behat": "2.5.2",
@@ -53,11 +54,7 @@
     "drupal/admin_menu": "7.3.0-rc5",
     "drupal/blockify": "7.1.2",
     "drupal/magic": "7.2.2",
-    "drupal/aurora": "7.3.6",
-    "drupal/responsive_menu_combined": "7.1.0-alpha1",
-    "drupal/beep_edition": "7.3.2",
-    "drupal/basic": "7.4.2",
-    "drupal/zeropoint": "7.4.7"
+    "drupal/responsive_menu_combined": "7.1.0-alpha1"
   },
   "scripts": {
     "post-create-project-cmd": [
